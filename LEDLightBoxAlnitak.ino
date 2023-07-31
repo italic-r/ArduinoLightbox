@@ -57,8 +57,7 @@ enum shutterStatuses
   OPEN
 };
 
-
-int deviceId = FLAT_MAN;
+int deviceId    = FLAT_MAN;
 int motorStatus = STOPPED;
 int lightStatus = OFF;
 int coverStatus = UNKNOWN;
@@ -74,7 +73,6 @@ void loop()
 {
   handleSerial();
 }
-
 
 void handleSerial()
 {
@@ -247,5 +245,4 @@ void SetShutter(int val)
     // TODO: Actually handle this case
     coverStatus = val;
   }
-
 }

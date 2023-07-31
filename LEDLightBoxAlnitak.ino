@@ -80,16 +80,16 @@ void handleSerial()
   {
     char* cmd;
     char* data;
-    char temp[10];
+    char temp[8];
 
     int len = 0;
 
-    char str[20];
-    memset(str, 0, 20);
+    char str[8];
+    memset(str, 0, 8);
 
     // I don't personally like using the \n as a command character for reading.
     // but that's how the command set is.
-    Serial.readBytesUntil('\n', str, 20);
+    Serial.readBytesUntil('\n', str, 6);
 
     cmd = str + 1;
     data = str + 2;

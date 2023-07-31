@@ -27,7 +27,7 @@ Send    : >D000\n    //turn light off (brightness value should not be changed)
 Recieve : *D19000\n  //confirms light turned off.
 */
 
-volatile int ledPin = 13;    // the pin that the LED is attached to, needs to be a PWM pin.
+volatile int ledPin = 10;    // the pin that the LED is attached to, needs to be a PWM pin.
 int brightness = 0;
 
 enum devices
